@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 100%;       
+    max-width: 300px;    
+    height: auto;        
+    display: block;      
+    margin: 0 auto 15px; 
+    padding-bottom: 5%;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contenido {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #4a4a4a;
+}
+
+.parrafo {
+    font-size: 1em;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input[type="file"], select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#totalLoc_resultado, #totalLocEst_resultado, #totalHabFed_resultado, 
+#totalHabMascFed_resultado, #totalHabFemFed_resultado, #totalHabFemMasc_resultado, 
+#totalHabRurFed_resultado, #totalHabUrbFed_resultado, #totalHabRurUrbFed, 
+#munMayor, #estadoMayor, #totalMayor {
+    background-color: #f9f9f9;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    margin-top: 20px;
+    color: #888;
+}

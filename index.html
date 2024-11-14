@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATOS CENSO INEGI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenido">
+        <div class="contenedor1">
+            <img src="https://www.taosc.com.mx/wp-content/uploads/INEGI_a-1024x205.png" alt="INEGI">
+            <p class="parrafo">Inserta aquí el archivo .csv con los datos del censo.</p>
+            <input type="file" id="input_censo" accept=".csv"></input>
+            <pre id="output"></pre>
+            <div class="contenedor_botones">
+                <p class="parrafo">Total de localidades existentes en la República Mexicana:</p>
+                <p id="totalLoc_resultado"></p>
+                <button id="boton_mostrarLocFed">Mostrar</button>
+                <p class="parrafo">Total de localidades existentes en el estado seleccionado:</p>
+                <select name="estado" id="selector_estado">
+                    <option value="" disabled selected>Seleccione un estado</option>
+                </select id="selector_estado">
+                <p id="totalLocEst_resultado"></p>
+                <button id="boton_mostrarLocEst" onclick="">Mostrar</button>
+                <p class="parrafo">Total de habitantes en la República Mexicana:</p>
+                <p id="totalHabFed_resultado"></p>
+                <button id="boton_mostrarHabFed">Mostrar</button>
+                <p class="parrafo">Total de habitantes masculinos en la República Mexicana:</p>
+                <p id="totalHabMascFed_resultado"></p>
+                <p class="parrafo">Total de habitantes femeninos en la República Mexicana:</p>
+                <p id="totalHabFemFed_resultado"></p>
+                <p class="parrafo">Total:</p>
+                <p id="totalHabFemMasc_resultado"></p>
+                <button id="boton_mostrarHabMascFem">Mostrar</button>
+                <p class="parrafo">Total de habitantes en zona rural en la República Mexicana:</p>
+                <p id="totalHabRurFed_resultado"></p>
+                <p class="parrafo">Total de habitantes en zona urbana en la República Mexicana:</p>
+                <p id="totalHabUrbFed_resultado"></p>
+                <p class="parrafo">Total:</p>
+                <p id="totalHabRurUrbFed"></p>
+                <button id="boton_mostrarHabRurUrb">Mostrar</button>
+                <p class="parrafo">Total de viviendas habitadas por estado:</p>
+                 <table id="tabla">  
+                    <thead>
+                        <tr>
+                            <th>Estado</th>
+                            <th>Viviendas</th>
+                        </tr>
+                    </thead>  
+                    <tr>
+                    </tr>
+                 </table>
+                <button id="boton_mostrarVivEst">Mostrar</button>
+                <p class="parrafo">Localidades según municipio y estado:</p>
+                <select name="estado1" id="selector_estado1">
+                    <option value="" disabled selected>Seleccione un estado</option>
+                </select>
+                <select name="municipio" id="selector_mun">
+                    <option value="" disabled selected>Seleccione un municipio</option>
+                </select>
+                <table id="tabla1">  
+                    <thead>
+                        <tr>
+                            <th>Localidades</th>
+                        </tr>
+                    </thead>  
+                    <tr>
+                    </tr>
+                </table>
+                <button id="boton_mostrarLocMun">Mostrar</button>
+                <p class="parrafo">Municipio con más habitantes a nivel federal:</p>
+                <p id="munMayor"></p>
+                <p class="parrafo">Su respectivo estado:</p>
+                <p id="estadoMayor"></p>
+                <p class="parrafo">Su población:</p>
+                <p id="totalMayor"></p>
+                <button id="boton_mostrarMayor">Mostrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
