@@ -151,9 +151,12 @@ document.getElementById("input_censo").addEventListener("change", function (even
                 }
             }
 
-            res1.innerHTML = totalHabFem;
-            res.innerHTML = totalHabMasc;
-            totalHabFemMasc_resultado.innerHTML = totalHabFem + totalHabMasc;
+            totalFM = totalHabMasc + totalHabFem;
+            porcFem = ((totalHabFem / totalFM) * 100).toFixed(2);
+            res1.innerHTML = totalHabFem + " (" + porcFem + "%)";
+            porcMasc = ((totalHabMasc / totalFM) * 100).toFixed(2);
+            res.innerHTML = totalHabMasc  + " (" + porcMasc + "%)";
+            totalHabFemMasc_resultado.innerHTML = (totalFM) + " (100%)";
         });
 
         boton_mostrarHabRurUrb.addEventListener("click", function() {
